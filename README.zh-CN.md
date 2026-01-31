@@ -4,7 +4,7 @@
 
 一个通过 fzf 交互式选择管理多个环境变量配置的 CLI 工具。
 
-<img src="docs/vhs/demo.gif" width="800" alt="Demo">
+<img src="docs/vhs/demo.gif" width="500" alt="Demo">
 
 **[安装指南](docs/installation.zh-CN.md)** | 下方快速开始
 
