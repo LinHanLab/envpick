@@ -8,39 +8,26 @@ envpick requires **fzf** for interactive selection. Install fzf from [https://gi
 
 ## Install envpick
 
-### Option 1: Pre-built Binary (Recommended)
+### Option 1: Homebrew (macOS - Recommended)
+
+```bash
+brew install LinHanLab/envpick/envpick
+```
+
+### Option 2: Pre-built Binary (Linux/Windows)
 
 Download the latest release for your platform from the [releases page](https://github.com/LinHanLab/envpick/releases).
 
-**Linux (x86_64)**
-```bash
-curl -L https://github.com/LinHanLab/envpick/releases/latest/download/envpick_Linux_x86_64.tar.gz | tar xz
-sudo mv envpick /usr/local/bin/
-```
-
-**Linux (ARM64)**
-```bash
-curl -L https://github.com/LinHanLab/envpick/releases/latest/download/envpick_Linux_arm64.tar.gz | tar xz
-sudo mv envpick /usr/local/bin/
-```
-
-**macOS (Intel)**
-```bash
-curl -L https://github.com/LinHanLab/envpick/releases/latest/download/envpick_Darwin_x86_64.tar.gz | tar xz
-sudo mv envpick /usr/local/bin/
-```
-
-**macOS (Apple Silicon)**
-```bash
-curl -L https://github.com/LinHanLab/envpick/releases/latest/download/envpick_Darwin_arm64.tar.gz | tar xz
-sudo mv envpick /usr/local/bin/
-```
+**Linux**
+1. Download the appropriate file for your architecture (x86_64 or ARM64)
+2. Extract: `tar xzf envpick_<version>_Linux_<arch>.tar.gz`
+3. Move to PATH: `sudo mv envpick /usr/local/bin/`
 
 **Windows**
 
-Download `envpick_Windows_x86_64.zip` or `envpick_Windows_arm64.zip` from the releases page, extract it, and add the directory to your PATH.
+Download the appropriate ZIP file, extract it, and add the directory to your PATH.
 
-### Option 2: Install via Go
+### Option 3: Install via Go
 
 If you have Go installed:
 
@@ -48,7 +35,7 @@ If you have Go installed:
 go install github.com/LinHanLab/envpick@latest
 ```
 
-### Option 3: Build from Source
+### Option 4: Build from Source
 
 ```bash
 git clone https://github.com/LinHanLab/envpick.git

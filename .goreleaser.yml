@@ -59,3 +59,16 @@ release:
     name: envpick
   draft: false
   prerelease: auto
+
+brews:
+  - repository:
+      owner: LinHanLab
+      name: homebrew-envpick
+      token: "{{ .Env.GITHUB_TOKEN }}"
+    homepage: https://github.com/LinHanLab/envpick
+    description: "CLI tool for managing multiple environment variable configurations with interactive selection"
+    license: MIT
+    install: |
+      bin.install "envpick"
+    test: |
+      system "#{bin}/envpick", "--version"

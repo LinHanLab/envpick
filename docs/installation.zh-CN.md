@@ -8,39 +8,26 @@ envpick 需要 **fzf** 进行交互式选择。从 [https://github.com/junegunn/
 
 ## 安装 envpick
 
-### 方式 1: 预编译二进制文件（推荐）
+### 方式 1: Homebrew (macOS - 推荐)
+
+```bash
+brew install LinHanLab/envpick/envpick
+```
+
+### 方式 2: 预编译二进制文件 (Linux/Windows)
 
 从 [releases 页面](https://github.com/LinHanLab/envpick/releases) 下载适合你平台的最新版本。
 
-**Linux (x86_64)**
-```bash
-curl -L https://github.com/LinHanLab/envpick/releases/latest/download/envpick_Linux_x86_64.tar.gz | tar xz
-sudo mv envpick /usr/local/bin/
-```
-
-**Linux (ARM64)**
-```bash
-curl -L https://github.com/LinHanLab/envpick/releases/latest/download/envpick_Linux_arm64.tar.gz | tar xz
-sudo mv envpick /usr/local/bin/
-```
-
-**macOS (Intel)**
-```bash
-curl -L https://github.com/LinHanLab/envpick/releases/latest/download/envpick_Darwin_x86_64.tar.gz | tar xz
-sudo mv envpick /usr/local/bin/
-```
-
-**macOS (Apple Silicon)**
-```bash
-curl -L https://github.com/LinHanLab/envpick/releases/latest/download/envpick_Darwin_arm64.tar.gz | tar xz
-sudo mv envpick /usr/local/bin/
-```
+**Linux**
+1. 下载适合你架构的文件 (x86_64 或 ARM64)
+2. 解压: `tar xzf envpick_<version>_Linux_<arch>.tar.gz`
+3. 移动到 PATH: `sudo mv envpick /usr/local/bin/`
 
 **Windows**
 
-从 releases 页面下载 `envpick_Windows_x86_64.zip` 或 `envpick_Windows_arm64.zip`，解压后将目录添加到你的 PATH。
+下载适合的 ZIP 文件，解压后将目录添加到你的 PATH。
 
-### 方式 2: 通过 Go 安装
+### 方式 3: 通过 Go 安装
 
 如果你已经安装了 Go:
 
@@ -48,7 +35,7 @@ sudo mv envpick /usr/local/bin/
 go install github.com/LinHanLab/envpick@latest
 ```
 
-### 方式 3: 从源码编译
+### 方式 4: 从源码编译
 
 ```bash
 git clone https://github.com/LinHanLab/envpick.git
